@@ -1,3 +1,5 @@
+// Soma todas as parcelas de uma simulação de financiamento pelo Banco do Brasil
+
 var linhas = document.querySelectorAll('.rich-table-row')
 var total = 0
 
