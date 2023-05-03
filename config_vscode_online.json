@@ -1,0 +1,12 @@
+{
+    "workbench.statusBar.visible": false,
+    "editor.fontSize": 18,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Bearded Theme Arc",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": true,
+    "editor.lineNumbersMinChars": 1,
+	"editor.glyphMargin": false,
+    "editor.folding": false,
+    "window.menuBarVisibility": "toggle",
+}
