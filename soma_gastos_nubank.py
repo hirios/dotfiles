@@ -11,7 +11,7 @@ function download(filename, text) {
 }
 
 function toBR(numero) {
-    let out = (numero / 100).toString()
+    let out = (numero / 100).toLocaleString('pt-BR')
     return out
 }
 
