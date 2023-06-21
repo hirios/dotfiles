@@ -11,14 +11,14 @@ function download(filename, text) {
 }
 
 function toBR(numero) {
-    let out = (numero / 100).toString() //.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+    let out = (numero / 100).toString().replace('.', ',') //.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
     return out
 }
 
 function GASTOS(nuJson) {
     let csvSting = ''
     nuJson.bill.line_items.forEach((e) => {
-        csvSting += e.post_date + '|' + e.title + '|' + toBR(e.amount) + '\n'
+        csvSting += e.post_date + ';' + e.title + ';' + toBR(e.amount) + '\n'
     })
 
     download('text.txt', csvSting)
