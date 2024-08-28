@@ -12,7 +12,7 @@ while (!stop) {
 
   tbody.querySelectorAll('tr').forEach(row => {
     const colunas = Array.from(row.querySelectorAll('td')).map(cell => cell.textContent.trim());
-    linhasCSV.push(colunas.join('|'));
+    linhasCSV.push(colunas.join(';'));
     });
 
     var Button = document.querySelector('[aria-label="Próxima página"]');
