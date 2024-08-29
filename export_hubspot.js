@@ -8,7 +8,7 @@ var linhasCSV = [];
 
 while (!stop) {
   console.log('Nova busca')
-  await sleep(5000)
+  await sleep(3000)
 
   tbody.querySelectorAll('tr').forEach(row => {
     const colunas = Array.from(row.querySelectorAll('td')).map(cell => cell.textContent.trim());
@@ -31,9 +31,15 @@ while (!stop) {
       });
       hiddenElement.href = window.URL.createObjectURL(blob);
       hiddenElement.click();
+      var a = new Audio('https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3');
+      a.play();
     } else {
       Button.click()
     }
 }
 
+// https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3
 
+// https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3
+
+// https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3
