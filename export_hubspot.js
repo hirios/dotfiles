@@ -3,10 +3,10 @@ function sleep(ms) {
 }
 
 var stop = false;
-var tbody = document.querySelector("tbody");
 var linhasCSV = [];
 
 while (!stop) {
+  var tbody = document.querySelector("tbody");
   console.log('Nova busca')
   await sleep(3000)
 
@@ -37,6 +37,8 @@ while (!stop) {
       Button.click()
     }
 }
+
+// [print(x[:-9].replace(' de Agosto de 2024', '/08/2024')) for x in var]
 
 // https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3
 
